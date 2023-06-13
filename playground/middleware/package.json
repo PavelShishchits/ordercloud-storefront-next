@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@vue-storefront/middleware": "3.0.1",
-    "@vue-storefront/integration-boilerplate-api": "*",
+    "@brimit_psh/vsf-ordercloud-api": "0.0.6",
     "cors": "^2.8.5"
   },
   "files": [

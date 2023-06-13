@@ -1,6 +1,6 @@
 {
-  "name": "@vue-storefront/integration-boilerplate-sdk",
-  "version": "0.1.0",
+  "name": "@vue-storefront/vsf-ordercloud-sdk",
+  "version": "0.0.6",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
   "types": "lib/index.d.ts",
@@ -23,7 +23,7 @@
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "@vue-storefront/integration-boilerplate-api": "0.1.0",
+    "@brimit_psh/vsf-ordercloud-api": "0.0.6",
     "@vue-storefront/sdk": "1.0.1",
     "nock": "^13.2.9",
     "msw": "^0.47.3",
