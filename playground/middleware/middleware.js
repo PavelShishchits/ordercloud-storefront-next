@@ -1,6 +1,8 @@
+require('dotenv').config();
 const { createServer } = require("@vue-storefront/middleware");
 const { integrations } = require("./middleware.config");
 const cors = require("cors");
+console.log('mew', process.env);
 
 (async () => {
   const app = await createServer({ integrations });

@@ -16,6 +16,9 @@ lib
 # Coverage directory used by tools like istanbul
 coverage
 
+# env
+playground/middleware/.env
+
 # Editor directories and files
 .idea
 .vscode

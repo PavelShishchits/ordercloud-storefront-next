@@ -2,6 +2,7 @@ import axios from 'axios';
 import { apiClientFactory } from '@vue-storefront/middleware';
 import { MiddlewareConfig } from './index';
 import * as apiEndpoints from './api';
+import { Configuration } from 'ordercloud-javascript-sdk';
 
 /**
  * In here you should create the client you'll use to communicate with the backend.
@@ -21,9 +22,22 @@ const onCreate = (settings: MiddlewareConfig) => {
   };
 };
 
+const init = (settings: MiddlewareConfig) => {
+
+  Configuration.Set({
+    baseApiUrl: settings.baseApiUrl,
+    clientID: settings.clientID
+  });
+
+  return onCreate(settings);
+};
+
 const { createApiClient } = apiClientFactory<any, any>({
   onCreate,
   api: apiEndpoints,
 });
 
-export { createApiClient };
+export {
+  createApiClient,
+  init
+};
